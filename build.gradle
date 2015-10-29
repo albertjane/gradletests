@@ -51,3 +51,11 @@ task propertyname << {
 propertyname.doLast {
     println "Gretting from the $propertyname.name task."
 }
+
+task myTask {
+    ext.myProperty = "myValue"
+}
+
+task printTaskProperties << {
+    println myTask.myProperty
+}
