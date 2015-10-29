@@ -1,6 +1,6 @@
-
 task hello << {
     println 'Hello world!'
+}
 
 task upper << {
     String someString = 'mY_nAmE'
@@ -10,5 +10,5 @@ task upper << {
 }
 
 task count << {
-    4.times { print "$it" }
+    4.times { print "$it " }
 }
