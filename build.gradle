@@ -44,3 +44,10 @@ task taskY << {
 
 task0.dependsOn task2, task3
 
+task propertyname << {
+    println 'Hello world!'
+}
+
+propertyname.doLast {
+    println "Gretting from the $propertyname.name task."
+}
